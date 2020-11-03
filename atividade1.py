@@ -7,7 +7,7 @@ def rotacaoLista(lista, numero):#definição de uma def com dois argumentos
             numeroFim = lista.pop(-1)#nessa parte, se um número é positivo, ele decremente o número final e adiciona ele no começo
             lista.insert(0, numeroFim)#no começo, na posição 0, no caso.
     else:
-        for i in range(abs(numero)):
+        for i in range(abs(numero)):#o abs retorna o valor absoluto do número que eu botei lá em cima
             numeroInicio = lista.pop(0)#aqui ele decrementa do início e adiciona no final.
             lista.append(numeroInicio)
             return
